@@ -25,3 +25,9 @@ SELECT salary FROM PayRollTable where startDate between CAST('2021-01-01' as dat
 --UC6-Alter and Update the table
 ALTER TABLE PayRollTable ADD gender varchar(10)
 UPDATE PayRollTable set gender ='Female' where name='Soubarnika' or  name='Geminika'
+
+--UC7-Finding sum avg,min,max
+select sum(salary) as totalsalary,gender from PayRollTable group by gender
+select avg(salary) as averagesalary,gender from PayRollTable group by gender
+select min(salary) as minsalary,gender from PayRollTable group by gender
+select max(salary) as maxsalary,gender from PayRollTable group by gender
