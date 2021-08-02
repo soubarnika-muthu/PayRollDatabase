@@ -24,4 +24,4 @@ SELECT salary FROM PayRollTable where startDate between CAST('2021-01-01' as dat
 
 --UC6-Alter and Update the table
 ALTER TABLE PayRollTable ADD gender varchar(10)
-UPDATE PayRollTable set gender ='Male' where name='venkat' 
+UPDATE PayRollTable set gender ='Female' where name='Soubarnika' or  name='Geminika'
