@@ -143,7 +143,7 @@ insert into Employee_Department values(5,5)
 
 select * from Employee_Department
 
---Adding the salary details in the pay roll
+--Adding the salary details in the pay roll table
 insert into PayRoll(Emp_id,BasicPay,Deduction,TaxablePay,Tax) values((select emp_id from Employee where emp_name='sou'),20000,2000,1500,500)
 insert into PayRoll(Emp_id,BasicPay,Deduction,TaxablePay,Tax) values(2,50000,10000,500,200),(3,35000,4500,300,245),(4,29000,5640,789,409),(5,45000,789,3456,300)
 update PayRoll set NetPay=(BasicPay-Deduction)
