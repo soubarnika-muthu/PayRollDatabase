@@ -21,3 +21,7 @@ SELECT * FROM PayRollTable
 --UC5-Retriving data Based on condition
 SELECT salary FROM PayRollTable where name='venkat'
 SELECT salary FROM PayRollTable where startDate between CAST('2021-01-01' as date) and GETDATE()
+
+--UC6-Alter and Update the table
+ALTER TABLE PayRollTable ADD gender varchar(10)
+UPDATE PayRollTable set gender ='Male' where name='venkat' 
