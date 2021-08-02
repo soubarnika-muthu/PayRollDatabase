@@ -48,3 +48,7 @@ where name='Geminika'
 update PayRollTable 
 set phonenumber = 8362736265 , address='chennai', department='Engineering'
 where name='venkat'
+
+--UC9-Altering employee table to add netpay,basic pag,Income tax,Taxable pay
+ALTER TABLE PayRollTable drop column salary
+ALTER TABLE PayRollTable Add BasicPay int, Deduction float, TaxablePay float, Tax float,NetPay float
