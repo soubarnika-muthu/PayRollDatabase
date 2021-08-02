@@ -9,3 +9,5 @@ name varchar(100) not null,
 salary float,
 startDate date
 )
+--UC3-Inserting the data into the table
+INSERT INTO PayRollTable VALUES('JEBA',10000,'2021-07-30')
