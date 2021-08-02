@@ -31,3 +31,20 @@ select sum(salary) as totalsalary,gender from PayRollTable group by gender
 select avg(salary) as averagesalary,gender from PayRollTable group by gender
 select min(salary) as minsalary,gender from PayRollTable group by gender
 select max(salary) as maxsalary,gender from PayRollTable group by gender
+
+--UC8-Adding Employee information
+ALTER TABLE PayRollTable ADD phonenumber bigint
+ALTER TABLE PayRollTable ADD address varchar(200) DEFAULT('INDIA')
+ALTER TABLE PayRollTable ADD department varchar(20) not null DEFAULT('Engineering')
+update PayRollTable 
+set phonenumber = 8738475839 , address='chennai', department='Engineering'
+where name='Shanthi'
+update PayRollTable 
+set phonenumber = 8664729247 , address='Salem', department='Intelligence'
+where name='Soubarnika'
+update PayRollTable 
+set phonenumber = 9327836727 , address='madurai', department='Intelligence'
+where name='Geminika'
+update PayRollTable 
+set phonenumber = 8362736265 , address='chennai', department='Engineering'
+where name='venkat'
