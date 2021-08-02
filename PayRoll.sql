@@ -10,4 +10,5 @@ salary float,
 startDate date
 )
 --UC3-Inserting the data into the table
-INSERT INTO PayRollTable VALUES('JEBA',10000,'2021-07-30')
+INSERT INTO PayRollTable VALUES('Soubarnika',10000,'2021-07-30')
+INSERT INTO PayRollTable VALUES('Geminika',50000,'2021-08-01')
