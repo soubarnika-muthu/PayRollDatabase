@@ -52,3 +52,7 @@ where name='venkat'
 --UC9-Altering employee table to add netpay,basic pag,Income tax,Taxable pay
 ALTER TABLE PayRollTable drop column salary
 ALTER TABLE PayRollTable Add BasicPay int, Deduction float, TaxablePay float, Tax float,NetPay float
+
+--UC10-Adding Terrisa as part of marketing and Sale department
+Insert into PayRollTable values('Terissa','2020-07-06','Female',9737847733,'Marketting and sale','mumbai',20000,2000,1000,200,18000)
+select * from PayRollTable where name='Terissa'
